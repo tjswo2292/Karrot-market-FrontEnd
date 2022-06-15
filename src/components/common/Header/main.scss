@@ -1,0 +1,52 @@
+header {
+    padding: 0.375rem 1rem;
+    background-color: #000;
+    .header-list {
+        display: flex;
+        justify-content: space-between;
+        height: 2.099em;
+        padding: 0 1rem;
+        .logoimg-wrap {
+            .home-btn {
+                width: 11.375em;
+                height: 2.125em;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        .header-link {
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            .used-btn, .community-btn {
+                font-size: 16px;
+                font-weight: bold;
+                color: #B2C0CC;
+                padding: 0 0.5em;
+            }
+            .used-btn:hover {
+                color: #fff;
+            }
+            .community-btn:hover {
+                color: #fff;
+            }
+        }
+        .header-join {
+            display: flex;
+            align-items: center;
+            .signup-btn, .login-btn {
+                font-size: 16px;
+                font-weight: bold;
+                color: #B2C0CC;
+                padding: 0 0.5em;
+            }
+            .signup-btn:hover{
+                color: #fff;
+            }
+            .login-btn:hover{
+                color: #fff;
+            }
+        }
+    }
+}
