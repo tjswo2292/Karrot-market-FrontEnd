@@ -1,5 +1,3 @@
-import './community.scss';
-
 import Main from './../common/Header/Main';
 
 function Community() {

@@ -1,5 +1,3 @@
-import './signup.scss';
-
 import Main from './../common/Header/Main';
 
 function Signup() {
