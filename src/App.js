@@ -5,7 +5,7 @@ import Signup from './components/SignUp/Signup'
 import Used from './components/Used/Used'
 import Community from './components/Community/Community'
 
-import { Routes, Route, Link} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
