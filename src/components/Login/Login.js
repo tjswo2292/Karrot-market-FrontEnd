@@ -4,6 +4,8 @@ import Main from './../common/Header/Main';
 
 import { Link } from 'react-router-dom';
 
+import { KAKAO_AUTH_URL } from './../../utils/OAuth.js';
+
 function Login() {
     return (
         <>
@@ -15,22 +17,24 @@ function Login() {
                             <h1>로그인</h1>
                         </li>
                         <li>
-                            <button id='kakao-login' type='button'>
-                                <div className='kakaologo-wrap'>
-                                    <img src={process.env.PUBLIC_URL + './assets/kakaologo.png'}/>
-                                </div>
-                                <span>kakao로 계속하기</span>
-                            </button>
+                            <a href={KAKAO_AUTH_URL}>
+                                <button id='kakao-login' type='button'>
+                                    <div className='kakaologo-wrap'>
+                                        <img src={process.env.PUBLIC_URL + './assets/kakaologo.png'}/>
+                                    </div>
+                                    <span>kakao로 계속하기</span>
+                                </button>
+                            </a>
                         </li>
                         <li className='under-line'>
                             <div className='hr-sect'>또는</div>
                         </li>
                         <li className='input-email'>
-                            <label for='email'>이메일</label>
+                            <label htmlFor='email'>이메일</label>
                             <input type='text' id='email' placeholder='이메일' />
                         </li>
                         <li className='input-pw'>
-                            <label for='password'>비밀번호</label>
+                            <label htmlFor='password'>비밀번호</label>
                             <input type='password' id='password' placeholder='비밀번호' />
                         </li>
                         <li>
