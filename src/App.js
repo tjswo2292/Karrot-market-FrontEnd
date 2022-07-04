@@ -17,6 +17,7 @@ function App() {
         <Route path='/signup' element={<Signup />} />
         <Route path='/used' element={<Used />} />
         <Route path='/community' element={<Community />} />
+        {/* <Route paht='/oauth/callback/kakao' element={KakaoRedirectHandler} /> */}
       </Routes>
     </div>
   );
