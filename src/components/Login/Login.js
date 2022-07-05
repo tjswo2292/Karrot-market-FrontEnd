@@ -18,7 +18,7 @@ function Login() {
                         <LoginTitle>
                             <LoginTitleTExt>로그인</LoginTitleTExt>
                         </LoginTitle>
-                        <li>
+                        <LoginBtnBox>
                             <a href={KAKAO_AUTH_URL}>
                                 <KakaoLoginBtn type='button'>
                                     <KakaologoWrap>
@@ -27,7 +27,7 @@ function Login() {
                                     <KakaoLoginText>kakao로 계속하기</KakaoLoginText>
                                 </KakaoLoginBtn>
                             </a>
-                        </li>
+                        </LoginBtnBox>
                         <UnderLine>
                             <HrSect>또는</HrSect>
                         </UnderLine>
@@ -39,13 +39,13 @@ function Login() {
                             <InputLabel htmlFor='password'>비밀번호</InputLabel>
                             <InfoInput type='password' id='password' placeholder='비밀번호' />
                         </InputBox>
-                        <li>
+                        <LoginBtnBox>
                             <LoginBtn id='login-click-btn' type='submit'>
                                 로그인 하기
                             </LoginBtn>
-                        </li>
+                        </LoginBtnBox>
                         <SignUpLink>
-                            <span>아직 계정이 없으신가요?</span>
+                            아직 계정이 없으신가요?
                             <Link to='/signup'>
                                 <MoveSignUp>계정 만들기</MoveSignUp>
                             </Link>
@@ -127,6 +127,9 @@ const HrSect = styled.div`
 `
 const InputBox = styled.li`
     margin-top: 20px;
+`
+const LoginBtnBox = styled.li`
+    margin: none;
 `
 const InputLabel = styled.label`
     margin-bottom:8px;

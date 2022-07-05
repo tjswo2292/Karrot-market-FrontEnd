@@ -4,6 +4,7 @@ function Signup() {
     return(
         <div>
             <Main />
+            <div>여기가 redirect 될 화면</div>
         </div>
     )
 }
